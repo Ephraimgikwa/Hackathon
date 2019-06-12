@@ -12,18 +12,15 @@ namespace Hackathon
         {
             DateTime date1 = new DateTime(DateTime.Now.Day);
             
-            string dt= date1.Day.ToString();
-            
+            string dt= date1.Day.ToString();  
             int dailydeposit = 0;
-           int dailywithdraw = 0;
+            int dailywithdraw = 0;
             int Balance = 0;
             int count = 0;
             int countwithdraw = 0;
             //Itreate the Program
             for (int i = 0; i <99999999; i++)
             {
-
-
 
                 //Landing Page
                 Console.WriteLine("Please Select Service");
@@ -53,9 +50,6 @@ namespace Hackathon
                 }
                 if (option == "2")
                 {
-                    //Introducing a count for no. of deposits daily
-                   
-
                     //Check If it is a new day
                     DateTime date2 = new DateTime(DateTime.Now.Day);
                     string dtn = date2.Day.ToString();
@@ -122,24 +116,9 @@ namespace Hackathon
                 {
                
                   
-                    //Check If it is a new day
-                    DateTime date3 = new DateTime(DateTime.Now.Day);
-                    string dtnw = date3.Day.ToString();
-
-                    if (dt == dtnw)
-                    {
-                        //Increment Countwithdraw
-                        countwithdraw = countwithdraw + 1;
-                    }
                     
-                    else
-                    {
-                        //reset day
-                        dt = dtnw;
-                        dailywithdraw = 0;
-                        countwithdraw = 0;
 
-                    }
+                    
                     //enforce max no. of withdraws daily
                     if (countwithdraw < 3)
                     {
@@ -167,9 +146,28 @@ namespace Hackathon
                                 //logic to ensure you cannot withdraw more than you have
                                 if (Balance >= withdrawamountint)
                                 {
-                                    //call a function to deposit the said Amount
+                                    //call a function to withdraw the Amount
                                     Withdraw withdrawmoney = new Withdraw();
                                     Balance = withdrawmoney.WithdrawAmount(withdrawamountint, Balance);
+
+                                    //Check If it is a new day
+                                    DateTime date3 = new DateTime(DateTime.Now.Day);
+                                    string dtnw = date3.Day.ToString();
+
+                                    if (dt == dtnw)
+                                    {
+                                        //Increment Countwithdraw
+                                        countwithdraw = countwithdraw + 1;
+                                    }
+
+                                    else
+                                    {
+                                        //reset day
+                                        dt = dtnw;
+                                        dailywithdraw = 0;
+                                        countwithdraw = 0;
+
+                                    }
 
                                     Console.WriteLine("Ksh " + withdrawamountint + "Has Been Withdrawn:");
                                     Console.WriteLine("Your Balance is Ksh:" + Balance);
@@ -210,7 +208,9 @@ namespace Hackathon
                     if (QuiteOption == "1")
                     {
                         //Clear all Information
+
                         System.GC.Collect();
+
                         //exit Console
                         Environment.Exit(0);
                     }

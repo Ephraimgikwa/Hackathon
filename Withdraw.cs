@@ -8,6 +8,8 @@ namespace Hackathon
 {
     class Withdraw
     {
+
+        //a function that withdraws money from account
         public int WithdrawAmount(int amount, int Balance)
         {
             int newBalance = Balance - amount;
