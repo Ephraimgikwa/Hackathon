@@ -9,7 +9,7 @@ namespace Hackathon
    public class Deposit
     {
        
-
+        //Method that deosits amount to account
         public int DepositAmount(int amount, int Balance)
         {
            int  newBalance = Balance + amount;

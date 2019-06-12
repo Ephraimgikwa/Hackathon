@@ -10,14 +10,17 @@ namespace Hackathon
     {
         static void Main(string[] args)
         {
+            //Reading Programs Date Run
             DateTime date1 = new DateTime(DateTime.Now.Day);
-            
+
+            //Parameters
             string dt= date1.Day.ToString();  
             int dailydeposit = 0;
             int dailywithdraw = 0;
             int Balance = 0;
             int count = 0;
             int countwithdraw = 0;
+
             //Itreate the Program
             for (int i = 0; i <99999999; i++)
             {
@@ -37,25 +40,29 @@ namespace Hackathon
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("I only accept Strings");
+                    Console.WriteLine("I only accept No 1, 2, 3 or 4");
                     throw;
                 }
 
-                //decision Based on user
+                //decision Based on user input
                 if (option == "1")
                 {
-                    //Call a function to display Balance in the class Balance
+                    //Creating an instance of my Class
                     Balance bal1 = new Balance();
+                    //Call a function to display Balance in the class Balance
                     bal1.ShowBalance(Balance);
                 }
                 if (option == "2")
                 {
-                    //Check If it is a new day
+                    //Check If it is the same day
+                    //Create an instance of the class DateTime
+
                     DateTime date2 = new DateTime(DateTime.Now.Day);
                     string dtn = date2.Day.ToString();
-
+                    //Decision in Program Date and Deposit date are the same
                     if (dtn == dt)
                     {
+                        //the same day
                         //Incrementing Count
                         count = count + 1;
                     }
