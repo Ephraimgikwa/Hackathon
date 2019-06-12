@@ -1,0 +1,7 @@
+C:\Users\egikwa\source\repos\Hackathon\Hackathon\bin\Debug\Hackathon.exe.config
+C:\Users\egikwa\source\repos\Hackathon\Hackathon\bin\Debug\Hackathon.exe
+C:\Users\egikwa\source\repos\Hackathon\Hackathon\bin\Debug\Hackathon.pdb
+C:\Users\egikwa\source\repos\Hackathon\Hackathon\obj\Debug\Hackathon.csprojAssemblyReference.cache
+C:\Users\egikwa\source\repos\Hackathon\Hackathon\obj\Debug\Hackathon.csproj.CoreCompileInputs.cache
+C:\Users\egikwa\source\repos\Hackathon\Hackathon\obj\Debug\Hackathon.exe
+C:\Users\egikwa\source\repos\Hackathon\Hackathon\obj\Debug\Hackathon.pdb
