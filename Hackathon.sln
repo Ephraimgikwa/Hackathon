@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon", "Hackathon\Hackathon.csproj", "{F1754564-4A6D-4A62-B1EF-65806C96D9F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HACKATHONTESTER", "HACKATHONTESTER\HACKATHONTESTER.csproj", "{EFAF77A0-AFAE-4F93-AAB5-57D557489B17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1754564-4A6D-4A62-B1EF-65806C96D9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1754564-4A6D-4A62-B1EF-65806C96D9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1754564-4A6D-4A62-B1EF-65806C96D9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1754564-4A6D-4A62-B1EF-65806C96D9F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFAF77A0-AFAE-4F93-AAB5-57D557489B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAF77A0-AFAE-4F93-AAB5-57D557489B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFAF77A0-AFAE-4F93-AAB5-57D557489B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAF77A0-AFAE-4F93-AAB5-57D557489B17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1E1E364-9655-4EDF-A5B7-0E69E4B91A98}
+	EndGlobalSection
+EndGlobal
